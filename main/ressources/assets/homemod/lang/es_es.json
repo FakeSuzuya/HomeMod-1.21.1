@@ -1,0 +1,8 @@
+{
+    "home_set": "Casa %s establecida con éxito!",
+    "home_exists": "Ya existe una casa con este nombre.",
+    "home_limit": "Has alcanzado el número máximo de casas (5).",
+    "home_not_found": "No se encontró ninguna casa con el nombre %s.",
+    "home_deleted": "Casa %s eliminada con éxito!",
+    "teleport_success": "Teletransportado a la casa %s."
+}

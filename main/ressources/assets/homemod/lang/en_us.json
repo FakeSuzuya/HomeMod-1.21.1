@@ -1,0 +1,8 @@
+{
+    "home_set": "Home %s set successfully!",
+    "home_exists": "A home with this name already exists.",
+    "home_limit": "You have reached the maximum number of homes (5).",
+    "home_not_found": "No home found with the name %s.",
+    "home_deleted": "Home %s deleted successfully!",
+    "teleport_success": "Teleported to home %s."
+}

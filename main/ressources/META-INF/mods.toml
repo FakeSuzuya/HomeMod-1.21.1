@@ -1,0 +1,15 @@
+modLoader = "javafml"
+loaderVersion = "[52,)" # Version de Forge compatible
+license = "MIT" # Remplace par ta licence si différente
+
+[[mods]]
+modId = "homemod"
+version = "1.0"
+displayName = "Home Mod"
+description = "Un mod pour gérer des maisons dans Minecraft."
+authors = ["JustSuzuya]
+credits = "Merci à Minecraft et à Forge."
+logoFile = "assets/homemod/logo.png" # Optionnel, remplace par le chemin de ton logo si tu en as un
+displayUrl = "https://example.com" # Optionnel, l'URL de ton mod si tu en as une
+updateJSONURL = "https://example.com/update.json" # Optionnel, pour les mises à jour
+issueTrackerURL = "https://example.com/issue-tracker" # Optionnel, pour signaler des bugs

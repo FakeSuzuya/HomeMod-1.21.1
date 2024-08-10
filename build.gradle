@@ -1,0 +1,74 @@
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version '6.0.26'
+}
+
+group = 'com.example'
+version = '1.0'
+archivesBaseName = 'homemod'
+
+minecraft {
+    mappings channel: 'official', version: '1.21.1'
+    runs {
+        client {
+            workingDirectory project.file('run')
+            mods {
+                homemod {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+            mods {
+                homemod {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.minecraftforge.net/' }
+    gradlePluginPortal()
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.21.1-52.0.1'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+
+
+
+
+
+jar {
+    manifest {
+        attributes(
+            'Specification-Title': 'homemod',
+            'Specification-Vendor': 'example',
+            'Specification-Version': '1',
+            'Implementation-Title': 'homemod',
+            'Implementation-Version': version,
+            'Implementation-Vendor': 'example'
+        )
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    with {
+        from(sourceSets.main.output) {
+            exclude 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA'
+        }
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }
+}
