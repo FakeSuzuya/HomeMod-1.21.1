@@ -1,4 +1,4 @@
-#HomeMod-1.21.1
+# HomeMod-1.21.1
 
 Un mod pratique pour Minecraft 1.21.1 qui vous permet de gérer facilement vos points de téléportation personnels avec plusieurs options ! 🏄‍♂️
 Fonctionnalités
@@ -21,3 +21,5 @@ Les contributions sont les bienvenues ! Si vous avez des suggestions, des améli
 Remerciements
 
 Merci à la communauté Minecraft pour le soutien et les retours !
+
+# Le mod n'est pas compiler
